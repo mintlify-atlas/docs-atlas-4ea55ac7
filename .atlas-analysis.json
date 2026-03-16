@@ -1,0 +1,154 @@
+{
+  "projectType": "saas",
+  "projectName": "OpenPanel",
+  "projectDescription": "OpenPanel is an open-source, privacy-first web and product analytics platform — a self-hostable alternative to Mixpanel with real-time dashboards, session replay, funnels, cohorts, A/B testing, and multi-platform SDKs.",
+  "theme": "mint",
+  "primaryColor": "#848484",
+  "lightColor": "#101010",
+  "darkColor": "#c1c1c1",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "self-hosting/overview"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/dashboards",
+              "features/events",
+              "features/funnels",
+              "features/cohorts",
+              "features/session-replay",
+              "features/ab-testing",
+              "features/notifications",
+              "features/user-profiles"
+            ]
+          },
+          {
+            "group": "SDKs",
+            "pages": [
+              "sdks/overview",
+              "sdks/javascript",
+              "sdks/web",
+              "sdks/nextjs",
+              "sdks/react",
+              "sdks/remix",
+              "sdks/vue",
+              "sdks/astro",
+              "sdks/nuxt",
+              "sdks/express",
+              "sdks/react-native",
+              "sdks/swift",
+              "sdks/kotlin",
+              "sdks/rust",
+              "sdks/ruby"
+            ]
+          },
+          {
+            "group": "Self-Hosting",
+            "pages": [
+              "self-hosting/docker-compose",
+              "self-hosting/environment-variables",
+              "self-hosting/coolify",
+              "self-hosting/updating"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/slack",
+              "integrations/discord",
+              "integrations/google-search-console"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Tracking",
+            "pages": [
+              "api/track",
+              "api/identify",
+              "api/profile"
+            ]
+          },
+          {
+            "group": "Export",
+            "pages": [
+              "api/export-events",
+              "api/export-charts"
+            ]
+          },
+          {
+            "group": "Insights",
+            "pages": [
+              "api/insights-metrics",
+              "api/insights-live",
+              "api/insights-pages"
+            ]
+          },
+          {
+            "group": "Manage",
+            "pages": [
+              "api/manage-projects",
+              "api/manage-clients",
+              "api/manage-references"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time dashboards with live data updates and interactive charts",
+    "Session replay with privacy controls (cookieless, mask inputs/text)",
+    "Funnels and cohort analysis for conversion tracking",
+    "A/B testing with variant breakdowns",
+    "Smart notifications for events and funnels (Slack, Discord)",
+    "User profiles and session history",
+    "Multi-platform SDKs: Web, Next.js, React, Vue, Astro, Nuxt, Express, React Native, Swift (iOS), Kotlin (Android), Rust, Ruby",
+    "Privacy-first and GDPR-compliant cookieless tracking",
+    "Self-hosting support via Docker Compose",
+    "REST API for event ingestion, data export, and project management"
+  ],
+  "publicApiSurface": [
+    "POST /track — Ingest events (track, identify, increment, decrement, replay)",
+    "GET /track/device-id — Retrieve device and session IDs",
+    "POST /event — Post a raw event",
+    "POST /profile — Update a user profile",
+    "POST /profile/increment — Increment a profile property",
+    "POST /profile/decrement — Decrement a profile property",
+    "GET /export/events — Export raw events",
+    "GET /export/charts — Export chart data",
+    "GET /insights/:projectId/metrics — Get website metrics overview",
+    "GET /insights/:projectId/live — Get live visitor count",
+    "GET /insights/:projectId/pages — Get page views and top pages",
+    "GET /manage/projects — List projects",
+    "POST /manage/projects — Create a project",
+    "PATCH /manage/projects/:id — Update a project",
+    "DELETE /manage/projects/:id — Delete a project",
+    "GET /manage/clients — List API clients",
+    "POST /manage/clients — Create an API client",
+    "OpenPanel (JS SDK) — track(), identify(), screenView(), increment(), decrement(), revenue(), setGlobalProperties(), ready(), flush(), clear()",
+    "OpenPanel (Web SDK) — trackScreenViews(), trackOutgoingLinks(), trackAttributes(), pendingRevenue(), flushRevenue(), sessionReplay options",
+    "OpenPanelComponent (Next.js) — React component for script injection",
+    "useOpenPanel() (Next.js) — React hook exposing all tracking methods"
+  ]
+}
